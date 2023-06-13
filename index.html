@@ -1,20 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta hhtp-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <!-- CSS only -->
+    <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/282753b14d.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Colectivo Mujeres Musicas Rosario</title>
-</head>
-<body>
+    <title>Colectivo Mujeres Músicas Rosario</title>
+  </head>
+  <header>
+<!-- botones -->
+<section id="botones" >
+<button type="button" class="btn btn-primary">Eventos</button>
+<button type="button" class="btn btn-secondary">Musicas</button>
+<button type="button" class="btn btn-success">Quienes Somos?</button>
+<button type="button" class="btn btn-danger">Contactos</button>
+</section>
+
+  </header>
+  <body>
+  <!-- seccion de navbar -->
+    <section id="navbar">  
+      <nav class="navbar navbar-expand-lg bg-green">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="" target="_blank">
+            <img class="imgLogo" src="assets/css/imagenes/fotologo.png" alt="fotologo">
+          </a>
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item"> <a href= "https://www.facebook.com/ColectivoMujeresMusicasRosario/" target="_blank"><i class="fa-brands fa-facebook"></i></i></a></li>
+              <li class="list-group-item"> <a href="https://www.instagram.com/colectivomujeresmusicasrosario/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a></li>
+              
+              <!-- Button trigger modal -->
+              <!-- boton que abre el login  -->
+               <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#LoginModal">
+               Iniciar Sesión 
+              </button>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+      <!-- seccion del banner -->
+      <section >
+        
+       
+          <h1 class="text-black text-center intro">Colectivo Mujeres Músicas Rosario
+       
+        </section>
+
+      </section>
+
+  
+    <!-- Foto-->
+    <section>
+      <div class="banner">
+        <img class="imgperfil" src="assets/css/imagenes/fotomujeres.png" alt="fotosmujeres">
+      </div>
+    </section>
     
+      <!--presentacion  -->
+      <section class = "Presentacion text-center">
+        <h1>Eventos</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae blanditiis impedit delectus placeat, nobis fuga tempore facilis fugiat vitae architecto temporibus, quam itaque laboriosam, esse tempora molestias aut? Nostrum, doloribus?</h2>
+      </section> 
+<br>
+
+      <!-- Musicas -->
+      <section class = "estudios text-center">
+        <h1>Musicas</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores amet, similique quod ad ipsa doloribus nihil praesentium totam architecto eum eos enim illum voluptate! Provident rerum eaque laboriosam natus.</h2>
+        
+       
+      </section>
+<br>
+<!-- quienes somos -->
+      <section class = "experiencia text-center">
+        <h1>Es un grupo amplio</h1>
+        <h2>de difusión para todas las músicas de Rosario</h2>
+        <h2>Podés compartir flyers, búsque</h2>
+      </section>
+
+
    
 
- <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+<!-- contactos -->
+
+<section class="text-center mt-5">
+  <h1>Contactos</h1>
+  <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quas expedita suscipit similique! Aspernatur sint necessitatibus doloremque illum expedita voluptatem accusantium aut animi nulla. Magnam ut dolor illum assumenda impedit?</h2>
+  
+</section>
+ 
+
+
+<!-- El Login -->
+
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+           
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ingresar</button>
+       </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+  </body>
 </html>
