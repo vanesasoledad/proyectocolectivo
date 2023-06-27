@@ -3,68 +3,63 @@
     box-sizing: border-box;
 }
 
-h1{ font-size: 2.5em;}
-h2{ font-size: 1.7em;}
-p{ font-size: 1.2em;}
-ul{ list-style: none;}
-li{ font-size: 1.25em;}
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     background-color: #10832d;
 }
+
+h1{ font-size: 2.5em;}
+h2{ font-size: 1.7em;}
+p{ font-size: 1.2em;}
+ul{ list-style: none;}
+li{ font-size: 2.25em;}
   
-section {
-    background-color: aliceblue;
-}
-header{
-    background-color: aquamarine;
-}
-.imgperfil{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-.botenes{
-    font-size: 1.5em;
+button{
+    font-size: 1em;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px;
     border: 1px solid rgba(0,0,0,0.5);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
-    background-color: aquamarine;
+    color: rgb(8, 8, 8);
+    background-color: rgb(16, 128, 44);
 }
+
 button:hover{
-    background-color: rgb(rgb(40, 44, 39), rgb(90, 126, 90), rgba(99, 151, 108, 0.822));
+    background-color: rgb(rgb(40, 44, 39), rgb(97, 158, 97), rgba(99, 151, 108, 0.822));
 }
+
 .container{
-    max-width: 14000px;
+    max-width: 1400px;
     margin: auto;
 }
 
 header{
     background-color: rgb(245,245,245);
-    margin:0;
-    padding:25px 30px;
     font-weight: bold;
-    color:rgb(40, 44, 39);
+    color: rgb(40, 44, 39);
     font-size: 1.6em;
 }
 
-header.container{
+header .container{
     display: flex;
     flex-direction: column;
-    align-items:center;;
+    align-items: center;
 }
+
 header nav{
-    display:flex;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding-bottom: 25px;
 
 }
+
 header a{
     padding: 5px 12px;
     text-decoration: none;
@@ -75,6 +70,7 @@ header a{
 header a:hover{
     color: green;
 }
+
 #hero{
     display: flex;
     align-items:center;
@@ -93,15 +89,167 @@ header a:hover{
     background-size: cover;
     background-position: center center;
 }
+
 #hero h1{
     font-size: 5em;
     color: white;
 
 }
+
 #hero h1:hover{
     color: rgb(2, 143, 64);
 }
-section.container{
+
+#inicio .container{
     text-align: center;
     padding: 200px 12px;
 }
+
+#inicio button{
+    font-size: 1em;
+}
+
+#segundo {
+    background-color: rgb(241, 236, 236);
+    color: rgb(14, 138, 62);
+    text-align: center;
+}
+
+#segundo .container{
+    padding: 150px 12px;  
+}
+
+#segundo h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#tercera .container{
+    text-align: center;
+    padding:250px 12px;
+}
+
+#cuarto .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+footer{
+    background-color: rgb(2, 143, 64);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color:black;
+
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #inicio .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #inicio .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction :column;
+        justify-content: center;
+    }
+    #inicio h2{
+        margin-top: 0px;
+    }
+
+    #inicio .img-container{
+        background-image: url("fotos/pexels-picjumbocom-196652.jpg");
+        border-radius: 2em;
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;    
+    }
+
+    #segundo p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #segundo h2{
+        font-size: 4em;
+    }
+
+    #segundo .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(241, 236, 236);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    #tercera .container{
+       display: flex;
+       justify-content: space-evenly;
+    }
+
+    #tercera .texto2{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction :column;
+        justify-content: center;
+    }
+
+    #tercera .img-container{
+        background-image: url("fotos/mujeresmusicas.jpg");
+        border-radius: 2em;
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #tercera .carta2{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(241, 236, 236);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    #cuarto .container{
+        text-align: initial;
+    }
+    #cuarto h2{
+        font-size: 5em;
+    }
+      
+}
+
+
